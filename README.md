@@ -2,7 +2,7 @@
 
 <p>maze generating and pathfinding algorithm in javascript</p>
 
-## deploy
+### deploy
 <ul>
   <li>npm run build</li>
   <li>git add dist -f</li>
