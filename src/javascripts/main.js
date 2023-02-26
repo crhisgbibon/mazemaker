@@ -214,8 +214,8 @@ function DefaultSettings()
   width = 5;
   height = 5;
 
-  if(hideT) factor = 0.85;
-  else factor = 0.525;
+  if(hideT) factor = 0.925;
+  else factor = 0.625;
   
   let screenWidth = window.innerWidth;
   let screenHeight = window.innerHeight * factor;
@@ -580,8 +580,12 @@ function HidePad()
 
 function ReSizeMaze()
 {
-  if(hideT) factor = 0.85;
-  else factor = 0.525;
+  if(hideT) factor = 0.925;
+  else factor = 0.625;
+
+  let vhFactor;
+  if(hideT) vhFactor = 92.5;
+  else vhFactor = 62.5;
   
   let screenWidth = window.innerWidth;
   let screenHeight = window.innerHeight * factor;
@@ -589,6 +593,12 @@ function ReSizeMaze()
   
   if(screenWidth >= screenHeight) squareSize = screenHeight;
   else squareSize = screenWidth;
+
+  gameDiv.style.height = 'calc(var(--vh) * ' + vhFactor + ')';
+  gameDiv.style.top = 'calc(var(--vh) * 7.5)';
+  gameDiv.style.display = 'flex';
+  gameDiv.style.justifyContent = 'center';
+  gameDiv.style.alignItems = 'center';
   
   squareSize = squareSize * 0.9;
 
