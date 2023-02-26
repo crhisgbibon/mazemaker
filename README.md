@@ -1,3 +1,3 @@
-# <a href='https://crhisgbibon.github.io/mazemaker/' target='_blank'>maze maker</a>
+# <a href='https://crhisgbibon.github.io/mazemaker/' target='_blank'>Maze Maker</a>
 
-<p>maze generating and pathfinding algorithm in javascript</p>
+<p>Maze generating and pathfinding algorithm in javascript.</p>
